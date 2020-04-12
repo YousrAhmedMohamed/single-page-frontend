@@ -13,9 +13,8 @@ function FeaturedDeals() {
     return (
         <div className='features'>
             <div className='feature-div'>
-
                 <label className='feature-label'>Featured Auckland deals </label>
-                <a className='view-more-mob'> View More <IoIosArrowForward /></a>
+                <label className='view-more-mob'> View More <IoIosArrowForward /></label>
                 <button className='view-more'>
                     View More <IoIosArrowForward />
                 </button>
