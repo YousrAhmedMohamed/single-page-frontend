@@ -1,0 +1,47 @@
+@import '../../style/style.scss';
+
+.menu-name{
+  color: $font-color;
+  font-family: $font-stack;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.menu-number{
+    color: $light-font;
+    font-weight: 300;
+    font-size: 12px;
+}
+.menu-header{
+    
+        font-size: 28px;
+        font-weight: 700;
+        background-color: white;
+        border-bottom: 1px solid $border-color;
+        border-radius: 3px 3px 0 0;
+        padding: 15px 20px;
+        color: $back-color;
+        font-family: $font-stack;
+        display: flex;
+        align-items: center;
+}
+.menu-body{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid #f7f9fb;
+    border-top: none;
+    justify-content: space-between;
+     background-color: white;
+     padding: 12px 15px;
+}
+ .menu-body:hover{
+     color: $back-color;
+ }
+
+.sideMenu{
+
+    @include respond-to(handhelds) { display: none}
+    @include respond-to(medium-screens) {  display: none;}
+    @include respond-to(wide-screens) { width: 24%;}
+}

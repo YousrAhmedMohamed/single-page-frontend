@@ -1,0 +1,93 @@
+@import '../../style/style.scss';
+
+.view-more-mob{
+  @include respond-to(handhelds) {
+  display: block;
+  color: $back-color;
+      display: flex;
+    cursor: pointer;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+ display: none;
+}
+
+.view-more{
+    @include respond-to(handhelds) {
+  display: none;
+  }
+    background: $back-color;
+    width: 115px;
+    color: white;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    height: 35px;
+    align-items: center;
+    box-shadow: 0 0 8px 0 rgba(1, 178, 238, 0.5);
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.view-more:hover{
+    background-color: $hover-color;
+}
+
+.feature-div{
+  @include respond-to(handhelds) {
+    width: 100%;
+   display: inline-block;
+  }
+    display: flex;
+    align-self: flex-start;
+    width: 550px;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.feature-cards{
+
+    @include respond-to(handhelds) {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  
+}
+
+.features{
+    flex: 1;
+}
+
+.feature-label {
+ @include respond-to(handhelds) {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  color:$font-color;
+  font-size: 32px;
+  font-weight: 700;
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+  font-family: $font-stack;
+  flex-direction: row;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.feature-label:hover {
+      color:$back-color;
+}

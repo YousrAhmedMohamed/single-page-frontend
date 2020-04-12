@@ -1,0 +1,145 @@
+@import '../../style/style.scss';
+
+.all-prices{
+
+    display: inline-flex;
+     width: 100%;
+     align-items: flex-end; 
+}
+.sale-div{
+    display: inline-flex;
+    margin-top: -10px;
+}
+.original-class{
+    font-style: italic;
+    font-size: 14px;
+    text-decoration: line-through;
+    text-decoration-line: line-through;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    color: #727986;
+}
+.hover-text{
+    padding: 125px 0px 0px 0px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    width: 80%;
+    font-weight: 500;
+    color: white;
+    flex-direction: row;
+}
+.hover-card{
+position:absolute;
+top:0;
+flex:1;
+bottom: 0;
+right: 0;
+left: 0;
+height: 99%;
+width: 100%;
+background: rgba(1,178,238,.8);
+align-items: center;
+text-align: center;
+align-content: center;
+justify-content: center;
+}
+.bought-and-original{
+    display: inline-flex;
+    width: 92%;
+    padding: 5px;
+    justify-content: space-between;
+}
+.view-collec{
+    margin-top: 15px;
+    background: white;
+    width: 150px;
+    color: $back-color;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    height: 35px;
+    align-items: center;
+    border: 2px solid $back-color;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.sale-class{
+    font-size: 35px;
+    font-weight: 500;
+    color: $small-font-color;
+}
+.from-div{
+    display: block;
+    float: left;
+    width: 100%;
+    flex-direction: row;
+}
+.from-class{
+    float: right;
+    font-size: 12px;
+    font-weight: 500;
+    color: $small-font-color;
+}
+.footer-container-2{
+
+    margin-top: -4px;
+    padding: 10px 15px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-top: 1px solid $border-color;
+
+}
+.card-body-2{
+    background: white;
+    border-bottom: 1px solid #ced5df;
+    position: relative;
+    margin: 10px;
+    @include respond-to(handhelds) {  height: 405px; width: 270px; display: block; margin-bottom: 20px;}
+    @include respond-to(medium-screens) {  height: 430px; width: 400px;}
+    @include respond-to(wide-screens) { height: 405px; width: 300px;}
+}
+
+.card-body-3{
+    background: white;
+    border-bottom: 1px solid #ced5df;
+    position: absolute;
+    @include respond-to(handhelds) {  height: 395px; width: 280px; display: block; margin-bottom: 20px;}
+    @include respond-to(medium-screens) {height: 420px; width: 410px;}
+    @include respond-to(wide-screens) { height: 395px; width: 310px; }
+}
+
+
+.card-body-4{
+    background: white;
+    border-bottom: 1px solid #ced5df;
+    position: absolute;
+    @include respond-to(handhelds) { height: 385px; width: 288px; display: block; margin-bottom: 20px;}
+    @include respond-to(medium-screens) { height: 410px; width: 418px;}
+    @include respond-to(wide-screens) {    height: 385px; width: 318px;}
+}
+
+.card-img {
+    height: auto;
+    max-width: 100%;
+    position: relative;
+}
+.thirdCard{    
+    font-size: 15px;
+    font-weight: 300;
+    color: $light-font;
+}
+
+.offer-img {
+    position: absolute;
+    height: auto;
+    top: 210px;
+    z-index: 100;
+    left: 0px;
+    max-width: 100%;
+}

@@ -1,0 +1,123 @@
+@import '../../style/style.scss';
+
+.all-prices{
+
+    display: inline-flex;
+     width: 100%;
+     align-items: flex-end; 
+}
+.sale-div{
+    display: inline-flex;
+    margin-top: -10px;
+}
+.original-class{
+    font-style: italic;
+    font-size: 14px;
+    text-decoration: line-through;
+    text-decoration-line: line-through;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    color: #727986;
+}
+.hover-text{
+    padding: 125px 0px 0px 0px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    width: 80%;
+    font-weight: 500;
+    color: white;
+    flex-direction: row;
+}
+.hover-card{
+position:absolute;
+top:0;
+flex:1;
+bottom: 0;
+right: 0;
+left: 0;
+height: 99%;
+width: 100%;
+background: rgba(1,178,238,.8);
+align-items: center;
+text-align: center;
+align-content: center;
+justify-content: center;
+}
+.bought-and-original{
+    display: inline-flex;
+    width: 92%;
+    padding: 5px;
+    justify-content: space-between;
+}
+.bought-class{
+    
+}
+.sale-class{
+    font-size: 35px;
+    font-weight: 500;
+    color: $small-font-color;
+}
+.from-div{
+    display: block;
+    float: left;
+    width: 100%;
+    flex-direction: row;
+}
+.from-class{
+    float: right;
+    font-size: 12px;
+    font-weight: 500;
+    color: $small-font-color;
+}
+.footer-container{
+    margin-top: -4px;
+    padding: 10px 15px;
+    
+    @include respond-to(handhelds) { height: 155px;}
+    @include respond-to(medium-screens) {height: 155px;}
+    border-top: 1px solid $border-color;
+    flex-wrap: wrap;
+    position: relative;
+}
+.card-body{
+   
+    border-radius: 3px;
+    background: #fff;
+    border-bottom: 1px solid #ced5df;
+
+    @include respond-to(handhelds) { width: 100%; display: block; margin-bottom: 20px;}
+    @include respond-to(medium-screens) { width:47%;}
+    @include respond-to(wide-screens) {width: 37%; height: 475px; }
+
+
+}
+
+.card-img {
+    height: auto;
+    max-width: 100%;
+    position: relative;
+}
+.thirdCard{    
+    font-size: 15px;
+    font-weight: 300;
+    color: $light-font;
+}
+.SecondaryCard{
+    font-size: 15px;
+    font-weight: 300;
+    color: $back-color;
+}
+.HeaderCard{    
+    font-size: 20px;
+    font-weight: 500;
+    color: $font-color;
+}
+.offer-img {
+    position: absolute;
+    height: auto;
+    top: 210px;
+    z-index: 100;
+    left: 0px;
+    max-width: 100%;
+}

@@ -1,0 +1,75 @@
+
+@import '../../style/style.scss';
+
+
+.Home {
+  @include respond-to(handhelds) {
+    //display: inline-block;
+    justify-content: center;
+    padding: 20px;
+  }
+  @include respond-to(medium-screens) {
+    display: inline-block;
+    justify-content: space-evenly;
+    padding: 20px;
+  }
+  @include respond-to(wide-screens) {
+    justify-content: space-between;
+    padding: 20px 100px 0px 105px;
+  }
+
+  flex: 1;
+}
+.message-corona{
+
+    @include respond-to(handhelds) {
+        display: none;
+  }
+  @include respond-to(medium-screens) {
+      width: 80%;
+      flex:1;
+  }
+
+  margin-bottom: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+      
+}
+
+.message-corona-2{
+   @include respond-to(medium-screens) {
+
+    display: none;
+  }
+  @include respond-to(wide-screens) {
+   
+    display: none;
+  }
+    margin-bottom: 30px;
+    display: flex;
+    width: 100%;
+    flex: 1;
+    cursor: pointer;
+    margin-top: 20px;
+
+}
+
+
+.home-row{
+  @include respond-to(handhelds) {
+
+    display: block;
+  }
+  @include respond-to(medium-screens) {
+
+    display: flex;
+  }
+  @include respond-to(wide-screens) {
+   
+    display: flex;
+  }
+   
+     flex-direction: row;
+    justify-content: space-between;
+
+}
